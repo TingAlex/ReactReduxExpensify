@@ -130,4 +130,5 @@ renderCounterApp();
 C:\Users\Ting\Downloads\test\ReactCounter>npm run dev-server
 ```
 在浏览器中打开 http://127.0.0.1:8080/，成功！
+
 ![Screen Recording 2019-02-23 at 02.58.21.98 PM.gif](https://upload-images.jianshu.io/upload_images/10453247-5c027136ed7bdff6.gif?imageMogr2/auto-orient/strip)
