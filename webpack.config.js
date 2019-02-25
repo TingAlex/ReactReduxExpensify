@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   // 待转译的文件入口
-  entry: './src/app.js',
+  entry: './src/playground/reduxCounter.js',
   // 通过 node 提供的 path 函数获得当前目录。最终合并输出一个 bundle.js
   output: {
     path: path.join(__dirname, 'public'),
