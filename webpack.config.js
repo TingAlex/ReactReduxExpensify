@@ -21,6 +21,8 @@ module.exports = {
   // 别忘记配置 server！默认端口为 8080
   devServer: {
     contentBase: path.join(__dirname, 'public'),
+    // 将无法识别的地址都返回给 client 端的 index.html
+    historyApiFallback: true,
   },
   // 浏览器调试发现错误后可以追溯到转译前源代码的报错位置
   devtool: 'cheap-module-eval-source-map',

@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Indecision from './components/Indecision';
+import AppRouter from './routers/AppRouter';
 
-console.log('server running');
-
-ReactDOM.render(<Indecision />, document.getElementById('app'));
+ReactDOM.render(<AppRouter />, document.getElementById('app'));

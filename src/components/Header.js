@@ -1,14 +1,19 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Header = props => {
-  // 这种无状态组件本身不会像继承自 React.Component 的一样获得 state 与 props，但是我们
-  // 可以将 props 手动传递进来。
-  // 这其实就是一个正常的函数。
+// 新增 Header 提供 Link 链接至 client 端不同页面
+const Header = () => {
   return (
     <div>
-      {props.selected === '' ? '' : <h1>{props.selected}</h1>}
-      <h1>You have {props.length} items</h1>
-      <button onClick={props.choose}>Choose</button>
+      <NavLink exact to="/" activeClassName="is-active">
+        ExpenseDashboardPage
+      </NavLink>
+      <NavLink to="/create" activeClassName="is-active">
+        AddExpensePage
+      </NavLink>
+      <NavLink to="/404" activeClassName="is-active">
+        NotFoundPage
+      </NavLink>
     </div>
   );
 };
